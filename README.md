@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+![Lightsabercat](https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif)
 
 # Project Title
 
