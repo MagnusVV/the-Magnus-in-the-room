@@ -1,6 +1,6 @@
 ![Lightsabercat](https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif)
 
-# Project Title
+# My cats!
 
 Text about the project and why it exists. This would also be a great place to link the project on One.com.
 
