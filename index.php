@@ -9,13 +9,15 @@ require('./header.php');
 
 <nav>
     <ul>
-        <li><a href='./cat_1.php'>Måns</a></li>
-        <li><a href='./cat_1.php'>Felix</a></li>
-        <li><a href='./cat_1.php'>Both</a></li>
+        <!-- I länkarna nedan skickas parametern "name" över till cat.php. Den fångas upp som en variabel där-->
+
+        <li><a href='./cat.php?name=Måns'>Måns</a></li>
+        <li><a href='./cat.php?name=Felix'>Felix</a></li>
+        <li><a href='./cat.php?name=Both'>Both</a></li>
     </ul>
 </nav>
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptatum assumenda soluta quae consequatur maxime labore nemo? Esse corrupti quas obcaecati iste non, quia, libero, dicta corporis atque ut optio?
+<p>How can you <i>just not</i> love cats?
 </p>
 
 <?php

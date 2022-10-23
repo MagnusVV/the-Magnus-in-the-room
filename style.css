@@ -5,3 +5,19 @@
 body {
   font-family: sans-serif;
 }
+
+.picture-box {
+  height: 300px;
+  width: 400px;
+  background-color: bisque;
+  border: 1rem;
+  border-style: solid;
+  border-color: antiquewhite;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
