@@ -1,5 +1,5 @@
 <footer>
-    <p>Test footer</p>
+    <p> <?= date('D, d F, Y') ?> </p>
 </footer>
 </body>
 
