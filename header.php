@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My cats!</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/Logga_Magnus_SV 2.ico">
+    <link rel="icon" href="./images/Logga_Magnus_SV.ico">
 </head>
 
 <body>
