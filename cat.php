@@ -23,34 +23,27 @@ $catPictures = [
     ['./images/both/IMAGE150913024392893832-min.png', './images/both/IMG-20170527-WA0000-min.png', './images/both/IMG-20180103-WA0000-min.png', './images/both/IMG-20180803-WA0048-min.png', './images/both/IMG-20181001-WA0001-min.png', './images/both/IMG-20190722-WA0000-min.png', './images/both/IMG-20190730-WA0000-min.png', './images/both/IMG-20191130-WA0000-min.png', './images/both/IMG-20200326-WA0000-min.png', './images/both/IMG-20200402-WA0000-min.png', './images/both/IMG-20210307-WA0000-min.png', './images/both/IMG-20210419-WA0000-min.png',]
 ];
 
-// Array med lite kattfakta, såsom pälsfärg, ålder, eventuell övervikt och lite övrig fakta:
-
-$catFacts = [
-    //Fakta om Måns
-    ["furColor" => "Large-spotted grey and white", "age" => 15, "weight" => 7, "overWeight" => true, "otherCatFacts" => "Måns is a heavyset housecat with a wide chest. He is an excellent food thief and a great rattan basket ruiner. He is more my wife Kim's cat than mine, and his cat brother's name is Felix."],
-    //Fakta om Felix
-    ["furColor" => "Light brown, white and with dark stripes", "age" => 15, "weight" => 6, "overWeight" => false, "otherCatFacts" => "Felix is a cute, but slightly daft, housescat. He is an excellent toy hunter and midnight howler. He is more my cat than Kim's, and his cat brother's name is Måns."],
-    //Fakta om "both"
-    ["furColor" => "Grey and white", "age" => 30,  "weight" => 13, "overWeight" => true, "otherCatFacts" => "Although they are brothers, they are really not that fond of each other. But sometimes they team up, ususally during dinner time."]
-]
-
 ?>
 
 <article>
     <h2><?= $catName ?></h2>
     <p>
-        <?= $catFacts[0]["furColor"] . "</br>", $catFacts[0]["age"] . "</br>", $catFacts[0]["weight"]; ?>
+        <?php
+
+        //Funktionen aboutCat ropas in.
+
+        aboutCat($catName);
+
+        ?>
+
     </p>
     <p>
-        <?= $catFacts[0]["otherCatFacts"]; ?>
+
     </p>
 
     <?php
 
-    /*     $my_array = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow", "e" => "purple");
 
-    shuffle($my_array);
-    print_r($my_array); */
     ?>
     <div class="picture-box">
         <img src='<?= $catPictures[0][1]; ?>' alt="Cat picture" />
@@ -59,3 +52,20 @@ $catFacts = [
 <nav>
     <a href='./index.php'>Back</a>
 </nav>
+
+<?php
+
+require('./footer.php');
+
+
+    /* <?php
+$users = ['john', 'dave', 'tim'];
+
+for($i = 0;$i < count($users);$i++)
+	echo $users[$i]."\n";
+?> */
+
+    /*     $my_array = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow", "e" => "purple");
+
+    shuffle($my_array);
+    print_r($my_array); */

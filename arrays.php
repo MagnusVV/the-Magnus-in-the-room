@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // Arrays är definierade i sektionen nedan.
 //---
 // Array för bilder som slumpas fram:
@@ -17,9 +19,9 @@ $catPictures = [
 
 $catFacts = [
     //Fakta om Måns
-    ["furColor" => "Large-spotted grey and white", "age" => 15, "weight" => 7, "overWeight" => true, "otherCatFacts" => "Måns is a heavyset housecat with a wide chest. He is an excellent food thief and a great rattan basket ruiner. He is more my wife Kim's cat than mine, and his cat brother's name is Felix."],
+    ["Fur colour: " => "Large-spotted grey and white", "Age: " => 15, "Weight: " => "7 kg", "Overweight: " => true, "Other cat facts: " => "Måns is a heavyset housecat with a wide chest. He is an excellent food thief and a great rattan basket ruiner. He is more my wife Kim's cat than mine, and his cat brother's name is Felix."],
     //Fakta om Felix
-    ["furColor" => "Light brown, white and with dark stripes", "age" => 15, "weight" => 6, "overWeight" => false, "otherCatFacts" => "Felix is a cute, but slightly daft, housescat. He is an excellent toy hunter and midnight howler. He is more my cat than Kim's, and his cat brother's name is Måns."],
+    ["Fur colour: " => "Light brown, white and with dark stripes", "Age: " => 15, "Weight: " => "6 kg", "Overweight: " => false, "Other cat facts: " => "Felix is a cute, but slightly daft, housescat. He is an excellent toy hunter and midnight howler. He is more my cat than Kim's, and his cat brother's name is Måns."],
     //Fakta om "both"
-    ["furColor" => "Grey and white", "age" => 30,  "weight" => 13, "overWeight" => true, "otherCatFacts" => "Although they are brothers, they are really not that fond of each other. But sometimes they team up, ususally during dinner time."]
+    ["Fur colour: " => "Grey and white on Måns. Light brown, white and with dark stripes on Felix", "Age: " => 30,  "Weight: " => "13 kg", "Overweight: " => true, "Other cat facts: " => "Although they are brothers, they are really not that fond of each other. But sometimes they team up, ususally during dinner time."]
 ];
