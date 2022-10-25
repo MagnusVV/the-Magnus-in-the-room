@@ -23,5 +23,5 @@ $catFacts = [
     //Fakta om Felix
     ["Fur colour: " => "Light brown, white and with dark stripes", "Age: " => 15, "Weight: " => "6 kg", "Overweight: " => false, "Other cat facts: " => "Felix is a cute, but slightly daft, housescat. He is an excellent toy hunter and midnight howler. He is more my cat than Kim's, and his cat brother's name is Måns."],
     //Fakta om "both"
-    ["Fur colour: " => "Grey and white on Måns. Light brown, white and with dark stripes on Felix", "Age: " => 30,  "Weight: " => "13 kg", "Overweight: " => true, "Other cat facts: " => "Although they are brothers, they are really not that fond of each other. But sometimes they team up, ususally during dinner time."]
+    ["Fur colour: " => "Grey and white on Måns. Light brown, white and with dark stripes on Felix", "Age: " => 30,  "Weight: " => "13 kg", "Overweight: " => true, "Other cat facts: " => "Although they are brothers, they are not really that fond of each other. But sometimes they team up, usually during dinner time."]
 ];

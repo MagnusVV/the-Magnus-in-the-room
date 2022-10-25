@@ -17,8 +17,7 @@ require('./header.php');
     </ul>
 </nav>
 
-<p>How can you <i>just not</i> love cats?
-</p>
+<p>How can you <i>just not</i> love cats?</p>
 
 <?php
 
