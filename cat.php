@@ -25,21 +25,22 @@ require('./arrays.php');
 
     </p>
 
-    <div class="picture-box">
-        <img src='<?= $catPictures[0][1]; ?>' alt="Cat picture" />
-        <?php
+    <?php
 
-        //Funktionen catPhotos ropas in.
+    //Foreach-loop för att skriva ut bilderna. Funktionen catPhotos ropas in.
 
-        echo "<pre>";
+    foreach (catPhotos($catName) as $picture) {
 
-        print_r(catPhotos($catName));
-
-        ?>
+    ?>
         <div class="picture-box">
-            <img src='<?= $picture ?>' alt="Cat picture" />
+            <img src="<?= $picture ?> " alt="Cat picture" />
         </div>
-    </div>
+    <?php
+
+    }
+
+    ?>
+
 </article>
 <nav>
     <a href='./index.php'>Back</a>

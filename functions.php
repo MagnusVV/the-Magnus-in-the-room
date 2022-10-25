@@ -21,14 +21,16 @@ function aboutCat(string $theCatName)
 
     require('./arrays.php');
 
-    //Foreach-loop för skriva ut vad som står i arrayen $catFacts. "Overweight är ignorerat p g a att det är lite känsligt.
+    //Foreach-loop för skriva ut vad som står i arrayen $catFacts. "Overweight" är booleanskt och loopen skickar ut en textsträng om den är "true".
 
     foreach ($catFacts[$catFactsKey] as $cat => $catFact) {
 
-        if ($cat === "Overweight: ") {
+        if ($cat === "Overweight: " && $catFact === true) {
+            echo "Someone is a bit fat...</br></br>";
             continue;
-        } elseif ($cat === "Other cat facts: ") {
+        } elseif ($cat === "Overweight: " && $catFact === false) {
             echo "</br>";
+            continue;
         }
 
         echo $cat . $catFact . "</br>";
@@ -65,14 +67,14 @@ function catPhotos(string $theCatName)
 
     $shuffledPictures = array_rand($chosenCatPictures, 4);
 
-    //Nedan foreach-loop plockar ut de fyra slumpmässiga siffrorna från $shuffledPictures och använder dem för att plocka ur (kopiera) motsvarande bilder från den tidigare skapade arrayen $chosenCatPictures. Ur loopen får vi också arrayen $picture som nu består av fyra slumpmässiga bildsökvägar från $chosenCatPictures.
+    //Nedan foreach-loop plockar ut de fyra slumpmässiga siffrorna från $shuffledPictures och använder dem för att plocka ur (kopiera) motsvarande bildsökvägar från den tidigare skapade arrayen $chosenCatPictures. Ur loopen får vi också arrayen $pictures som nu består av fyra slumpmässiga bildsökvägar från $chosenCatPictures.
 
     foreach ($shuffledPictures as $pictNr) {
 
-        $picture[] = $chosenCatPictures[$pictNr];
+        $pictures[] = $chosenCatPictures[$pictNr];
     };
 
     //Arrayen $picture returneras till "open space" för att kunna användas till att ropa in bilder i cat.php.
 
-    return $picture;
+    return $pictures;
 };
