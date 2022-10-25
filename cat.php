@@ -1,6 +1,6 @@
 <?php
 
-// Här definieras kattens namn som variabel, som sedan används i funktion nedan.
+// Här definieras kattens namn, $catName, som variabel, som sedan används i funktioner nedan. Namnet kommer från parametern "name" som ligger i de tre klickbara länkarna på "index.php". Parametern fångas upp av super global-variabeln $_GET.
 
 $catName = $_GET['name'];
 
@@ -25,9 +25,13 @@ require('./arrays.php');
 
     </p>
 
+</article>
+
+<section class="picture-container">
+
     <?php
 
-    //Foreach-loop för att skriva ut bilderna. Funktionen catPhotos ropas in.
+    //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut fyra stycken HTML-div:ar med slumpade bilder.
 
     foreach (catPhotos($catName) as $picture) {
 
@@ -41,7 +45,8 @@ require('./arrays.php');
 
     ?>
 
-</article>
+</section>
+
 <nav>
     <a href='./index.php'>Back</a>
 </nav>
@@ -49,16 +54,3 @@ require('./arrays.php');
 <?php
 
 require('./footer.php');
-
-
-    /* <?php
-$users = ['john', 'dave', 'tim'];
-
-for($i = 0;$i < count($users);$i++)
-	echo $users[$i]."\n";
-?> */
-
-    /*     $my_array = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow", "e" => "purple");
-
-    shuffle($my_array);
-    print_r($my_array); */

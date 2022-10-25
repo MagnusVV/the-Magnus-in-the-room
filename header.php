@@ -13,5 +13,5 @@
 <body>
     <header>
         <h1>My cats!</h1>
-        <!-- <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" alt="Small cat fights dog with lightsaber" /> -->
+
     </header>
