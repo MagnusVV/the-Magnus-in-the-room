@@ -44,6 +44,10 @@ nav {
   padding: 4rem;
 }
 
+.cat-choice {
+  line-height: 2rem;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 500;

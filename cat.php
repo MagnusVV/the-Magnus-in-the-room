@@ -32,7 +32,7 @@ require('./arrays.php');
 
         <?php
 
-        //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut fyra stycken HTML-div:ar med slumpade bilder.
+        //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut sex stycken HTML-div:ar med slumpade bilder.
 
         foreach (catPhotos($catName) as $picture) {
 

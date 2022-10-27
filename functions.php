@@ -23,17 +23,17 @@ function aboutCat(string $theCatName)
 
     //Foreach-loop för skriva ut vad som står i arrayen $catFacts. "Overweight" är booleanskt och loopen skickar ut en textsträng om den är "true".
 
-    foreach ($catFacts[$catFactsKey] as $cat => $catFact) {
+    foreach ($catFacts[$catFactsKey] as $catIndex => $catFact) {
 
-        if ($cat === "Overweight: " && $catFact === true) {
+        if ($catIndex === "Overweight: " && $catFact === true) {
             echo "<small></br>(Someone is a bit fat...)</small></br></br>";
             continue;
-        } elseif ($cat === "Overweight: " && $catFact === false) {
+        } elseif ($catIndex === "Overweight: " && $catFact === false) {
             echo "</br>";
             continue;
         }
 
-        echo $cat . $catFact . "</br>";
+        echo $catIndex . $catFact . "</br>";
     }
 };
 
@@ -56,7 +56,7 @@ function catPhotos(string $theCatName)
 
     require('./arrays.php');
 
-    //Skapar den temporära arrayen $chosenCatPictures och string-variabeln $catPicture för att kunna blanda om en enskilds katts bilder.
+    //Skapar arrayen $chosenCatPicturesför att kunna blanda om en enskilds katts bilder.
 
     foreach ($catPictures[$catPictureKey] as $catPicture) {
 
@@ -67,7 +67,7 @@ function catPhotos(string $theCatName)
 
     $shuffledPictures = array_rand($chosenCatPictures, 6);
 
-    //Nedan foreach-loop plockar ut de fyra slumpmässiga siffrorna från $shuffledPictures och använder dem för att plocka ur (kopiera) motsvarande bildsökvägar från den tidigare skapade arrayen $chosenCatPictures. Ur loopen får vi också arrayen $pictures som nu består av sex stycken slumpmässiga bildsökvägar från $chosenCatPictures.
+    //Nedan foreach-loop plockar ut de sex slumpmässiga siffrorna från $shuffledPictures och använder dem för att plocka ur (kopiera) motsvarande bildsökvägar från den tidigare skapade arrayen $chosenCatPictures. Ur loopen får vi arrayen $pictures som nu består av sex stycken slumpmässiga bildsökvägar från $chosenCatPictures.
 
     foreach ($shuffledPictures as $pictNr) {
 
