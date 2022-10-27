@@ -11,7 +11,11 @@
 </head>
 
 <body>
-    <header>
-        <h1>My cats!</h1>
-
+    <header class="header-section">
+        <div class="header">
+            <h1>My cats!</h1>
+        </div>
+        <div class="logo-container">
+            <img src="./images/Logga_Magnus_INV.png" alt="Vargvinter-logo" class="vargvinter-logo" />
+        </div>
     </header>

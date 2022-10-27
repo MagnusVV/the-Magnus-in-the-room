@@ -26,7 +26,7 @@ function aboutCat(string $theCatName)
     foreach ($catFacts[$catFactsKey] as $cat => $catFact) {
 
         if ($cat === "Overweight: " && $catFact === true) {
-            echo "Someone is a bit fat...</br></br>";
+            echo "<small></br>(Someone is a bit fat...)</small></br></br>";
             continue;
         } elseif ($cat === "Overweight: " && $catFact === false) {
             echo "</br>";

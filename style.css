@@ -7,11 +7,41 @@
 
 body {
   font-family: 'Oswald', sans-serif;
-  color: white;
   background-color: #333333;
-  margin: 0;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  margin: 0 auto;
+  /*   padding-left: 4rem;
+  padding-right: 4rem; */
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vargvinter-logo {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+header,
+article,
+footer {
+  color: white;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+nav {
+  background-color: white;
+  padding: 4rem;
 }
 
 h1 {
@@ -27,14 +57,18 @@ h2 {
 p,
 a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   margin-right: 50%;
-  color: whitesmoke;
+}
+
+a {
+  color: #333333;
+  font-weight: 500;
 }
 
 .picture-container {
+  background-color: white;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  padding: 4rem 4rem 2rem 4rem;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -48,6 +82,8 @@ a {
   border: 1rem;
   border-style: solid;
   border-color: antiquewhite;
+  box-shadow: 5px 5px black;
+  transform: rotate(-1deg);
 }
 
 img {

@@ -12,44 +12,47 @@ require('./arrays.php');
 
 ?>
 
-<article>
-    <h2><?= $catName ?></h2>
-    <p>
+<main class="main">
+
+    <article class="cat-facts">
+        <h2><?= $catName ?></h2>
+        <p>
+            <?php
+
+            //Funktionen aboutCat ropas in.
+
+            aboutCat($catName);
+
+            ?>
+
+        </p>
+    </article>
+
+    <section class="picture-container">
+
         <?php
 
-        //Funktionen aboutCat ropas in.
+        //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut fyra stycken HTML-div:ar med slumpade bilder.
 
-        aboutCat($catName);
+        foreach (catPhotos($catName) as $picture) {
+
+        ?>
+            <div class="picture-box">
+                <img src="<?= $picture ?> " alt="Cat picture" />
+            </div>
+        <?php
+
+        }
 
         ?>
 
-    </p>
+    </section>
 
-</article>
+    <nav class="navigation">
+        <a class="back-to-start" href='./index.php'>Back</a>
+    </nav>
 
-<section class="picture-container">
-
-    <?php
-
-    //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut fyra stycken HTML-div:ar med slumpade bilder.
-
-    foreach (catPhotos($catName) as $picture) {
-
-    ?>
-        <div class="picture-box">
-            <img src="<?= $picture ?> " alt="Cat picture" />
-        </div>
-    <?php
-
-    }
-
-    ?>
-
-</section>
-
-<nav>
-    <a href='./index.php'>Back</a>
-</nav>
+</main>
 
 <?php
 
