@@ -65,7 +65,14 @@ a {
 
 /* - Sektionen som håller alla bilder och deras bildboxar. */
 
+.pictures {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
 .picture-container {
+  max-width: 1500px; /* - Måttet 1500px är satt för att antalet bilder per rad inte ska överstiga tre stycken. */
   background-color: white;
   margin-top: 2rem;
   padding: 4rem 4rem 2rem 4rem;

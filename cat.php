@@ -28,23 +28,27 @@ require('./arrays.php');
         </p>
     </article>
 
-    <section class="picture-container">
+    <section class="pictures">
 
-        <?php
+        <div class="picture-container">
 
-        //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut sex stycken HTML-div:ar med slumpade bilder.
+            <?php
 
-        foreach (catPhotos($catName) as $picture) {
+            //Foreach-loop för att ropa in och skriva ut bilderna. Funktionen catPhotos anropas och loopen skickar ut sex stycken HTML-div:ar med slumpade bilder.
 
-        ?>
-            <div class="picture-box">
-                <img src="<?= $picture ?> " alt="Cat picture" />
-            </div>
-        <?php
+            foreach (catPhotos($catName) as $picture) {
 
-        }
+            ?>
+                <div class="picture-box">
+                    <img src="<?= $picture ?> " alt="Cat picture" />
+                </div>
+            <?php
 
-        ?>
+            }
+
+            ?>
+
+        </div>
 
     </section>
 
