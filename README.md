@@ -2,7 +2,7 @@
 
 # My cats!
 
-It's a simple little page with three clickable links, each leading to a page that builds a little differently depending on the link being clicked. Each of ny cats have their own little facts page, and the third page is about them both. The pages contain short fact texts about the cats, as well as six randomised pictures per page. The image bank contains 12 pictures for each facts page, so the images shown will be slightly different every time you click one of the links (or update the page).
+It's a simple little page with three clickable links, each leading to a page that builds a little differently depending on the link being clicked. Each of my cats have their own little facts page, and the third page is about them both. The pages contain short fact texts about the cats, as well as six randomised pictures per page. The image bank contains 12 pictures for each facts page, so the images shown will be slightly different every time you click one of the links (or update the page).
 
 https://magnusvargvinter.se/mycats/index.php
 
