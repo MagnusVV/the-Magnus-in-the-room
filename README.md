@@ -8,7 +8,7 @@ https://magnusvargvinter.se/mycats/index.php
 
 # Installation
 
-There is none.
+All six php-files used are placed in the root folder. Images used are in the "images" folder and its three subfolder.
 
 # Code Review
 
