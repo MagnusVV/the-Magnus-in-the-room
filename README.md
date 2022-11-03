@@ -8,7 +8,7 @@ https://magnusvargvinter.se/mycats/index.php
 
 # Installation
 
-Add the installation instructions.
+There is none.
 
 # Code Review
 
