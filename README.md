@@ -6,7 +6,7 @@ It's a simple little page with three clickable links, each leading to a page tha
 
 This is my very first project, built with PHP and some HTML and CSS.
 
-https://magnusvargvinter.se/mycats/index.php
+~~https://magnusvargvinter.se/mycats/index.php~~ (Not hosted there anymore. Currently looking for another PHP hosting solution)
 
 # Installation
 
