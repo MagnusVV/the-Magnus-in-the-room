@@ -6,7 +6,7 @@ It's a simple little page with three clickable links, each leading to a page tha
 
 This is my very first project, built with PHP and some HTML and CSS.
 
-https://magnusvargvinter.000webhostapp.com/index.php
+[Deployed site](https://magnusvargvinter.000webhostapp.com/my_cats/index.php)
 # Installation
 
 All six php-files used are placed in the root folder. Images used are in the "images" folder and its three subfolders.
